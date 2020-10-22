@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Eva02</title>
+  <link rel="stylesheet" href="css/agecheck.css">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/jquery.js"></script>
+  <script src="js/jquery.agecheck.js"></script>
+  <script src="js/dailyMessages.min.js"></script>
+  <script>
+
+    $(document).ready(function () {
+
+      $.ageCheck({ minAge: minAge });
+    });        
+  </script>
+</head>
+
+<body>
+  <div class="daily-message"></div>
+
+  <script>
+		
+    $('.daily-message').dailyMessages({
+      monday: "Hoy es Lunes",
+      tuesday: "Hoy es Martes",
+      wednesday: "Hoy es Miercoles",
+      thursday: "Hoy es Jueves",
+      friday: "Hoy es Viernes",
+      saturday: "Hoy es Sabado",
+      sunday: "Hoy es Domingo",
+      success: function() {
+        console.log('It worked!');
+      },
+      error: function(message) {
+        console.log(message);
+        $(this).remove();
+      }
+    });
+  
+  </script>
+
+</body>
+
+</html>
