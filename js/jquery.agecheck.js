@@ -18,14 +18,14 @@
         copy: 'Debemos Comprobar que tienes mas de 18 de edad:',
         success: null,
         successMsg: {
-          header: 'Success!',
-          body: 'You are now being redirected back to the application...'
+          header: 'Bienvendio!',
+          body: 'Ocupamos 3 Librerias: Para mostrar los mensajes según el día, validador de edad y Graficos '
         },
-        underAgeMsg: 'Sorry, you are not old enough to view this site...',
+        underAgeMsg: 'Lo Siento no eres suficientemente grande ...',
         underAge: null,
         errorMsg: {
-          invalidDay: 'Day is invalid or empty',
-          invalidYear: 'Year is invalid or empty'
+          invalidDay: 'Dia No Valido o Vacio',
+          invalidYear: 'Año no valido o vacio'
         },
         storage: 'sessionStorage',
         storageExpires: null,
@@ -77,7 +77,7 @@
         },
         buildHtml() {
           const copy = settings.copy;
-          const months = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
+          const months = ['Enero', 'Febrero', 'Marzo', 'Abril', 'Mayo', 'Junio', 'Junio', 'Augusto', 'Sedtiembre', 'Octubre', 'Noviembre', 'Diciembre'];
           let html = '';
           html += '<div class="ac-overlay"></div>';
           html += '<div class="ac-container">';
