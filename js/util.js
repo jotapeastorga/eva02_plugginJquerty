@@ -11,20 +11,7 @@ window.chartColors = {
 };
 
 (function(global) {
-	var MONTHS = [
-		'January',
-		'February',
-		'March',
-		'April',
-		'May',
-		'June',
-		'July',
-		'August',
-		'September',
-		'October',
-		'November',
-		'December'
-	];
+	var MONTHS = ['Enero', 'Febrero', 'Marzo', 'Abril', 'Mayo', 'Junio', 'Julio', 'Augusto', 'Sedtiembre', 'Octubre', 'Noviembre', 'Diciembre'];
 
 	var COLORS = [
 		'#4dc9f6',

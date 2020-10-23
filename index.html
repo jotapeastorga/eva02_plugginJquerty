@@ -65,19 +65,15 @@
   </div>
   <br>
   <br>
-  <button id="randomizeData">Randomize Data</button>
-  <button id="addDataset">Add Dataset</button>
-  <button id="removeDataset">Remove Dataset</button>
-  <button id="addData">Add Data</button>
-  <button id="removeData">Remove Data</button>
+  <button id="randomizeData">Revisar Votantes</button>
   <script>
-    var MONTHS = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
+    var MONTHS = ['Enero', 'Febrero', 'Marzo', 'Abril', 'Mayo', 'Junio', 'Julio', 'Augusto', 'Sedtiembre', 'Octubre', 'Noviembre', 'Diciembre'];
     var config = {
       type: 'line',
       data: {
-        labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July'],
+        labels: ['Enero', 'Febrero', 'Marzo', 'Abril', 'Mayo', 'Junio', 'Julio'],
         datasets: [{
-          label: 'My First dataset',
+          label: 'Apruebo',
           backgroundColor: window.chartColors.red,
           borderColor: window.chartColors.red,
           data: [
@@ -91,7 +87,7 @@
           ],
           fill: false,
         }, {
-          label: 'My Second dataset',
+          label: 'Rechazo',
           fill: false,
           backgroundColor: window.chartColors.blue,
           borderColor: window.chartColors.blue,
